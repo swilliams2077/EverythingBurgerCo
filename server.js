@@ -7,6 +7,15 @@ var PORT = process.env.PORT || 3000
 app.use(express.urlencoded({ extended: true}));
 app.use(express.json());
 
+//TABLE RESERVATIONS
+var reservedTables = [
+
+];
+
+var waitingList = [
+
+];
+
 //Routes
 //=========================================================================
 
