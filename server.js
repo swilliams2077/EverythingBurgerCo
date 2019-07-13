@@ -33,13 +33,13 @@ app.get("/", function(req, res) {
 });
 
 //USER RESERVATION PAGE
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "makeres.html"));
+app.get("/add/reserve", function(req, res) {
+    res.sendFile(path.join(__dirname, "/add/reserve.html"));
 });
 
 //CURRENT RESERVATIONS AND WAITING LIST
-app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "reservelist.html"))
+app.get("/add/tables", function(req, res) {
+    res.sendFile(path.join(__dirname, "add/tables.html"))
 });
 
 // Displays all characters
