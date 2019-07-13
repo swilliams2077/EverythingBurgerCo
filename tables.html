@@ -20,15 +20,35 @@
     <div class="jumbotron">
       <h1 class="text-center">🔥EverythingBurgerCo</h1>
       <hr>
-      <h3 class="text-center">We only have 5 tables! Book your seat before they all are gone!</h3>
+      <h3 class="text-center">Current Reservations and Waiting List</h3>
       <div class="text-center">
-      <a href="/api/tables"><button class="btn btn-danger btn-lg"><span
-        class="fa fa-list"></span> View tables</button></a>
-      <a href="/reserve"><button  class="btn btn-info btn-lg text-center"><span class="fa fa-table">
-
+      <a href="/reserve"><button  class="btn btn-success   btn-lg text-center"><span class="fa fa-table">
       </span> Make reservation</button></a>
+      <a href="/index"><button  class="btn btn-info btn-lg text-center"><span class="fa fa-home">
+    </span></button></a>
       </div>
     </div>
+    
+    <div class="row">
+
+        <div class="col-12 ">
+              <div class="card">
+                    <h4 class="card-header">Table Reservation</h4>
+                    <div class="card-body" id="tableSection">
+                    </div>
+              </div>
+              <br>
+              <div class="card">
+                    <h4 class="card-header">Waiting list</h4>
+                    <div class="card-body" id="waitingSection">
+                    </div>
+                
+              </div>
+            
+            
+            </div>
+            </div>
+        
     </div>
   <script type="text/javascript">
     $("#search-btn").on("click", function() {
